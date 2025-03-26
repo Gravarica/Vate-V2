@@ -26,7 +26,7 @@ def main(videos: Union[str, None], annotations_path: Union[str, None], detection
     edge_server.connect()
 
     cloud_server = CloudServer(
-        detection_model_url="http://127.0.0.1:9093/predictions/faster_rcnn_visdrone",
+        detection_model_url="http://127.0.0.1:8080/predictions/swin",
         detection_timeout=30
     )
 

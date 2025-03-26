@@ -27,7 +27,7 @@ class EdgeServer:
         if self.ipc:
             self.socket.connect("ipc:///tmp/edge-server/0")
         else:
-            self.socket.connect("tcp://127.0.0.1:8000")
+            self.socket.connect("tcp://127.0.0.1:5555")
 
     def send_frame(self, frame: Frame) -> bool:
         if not self.in_progress:
